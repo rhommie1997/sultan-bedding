@@ -1,0 +1,57 @@
+
+/*Hamburger Menu */
+
+.menu-toggle{
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  margin-left: 20px;
+  position: relative;
+}
+
+.menu-toggle input{
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span{
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: #BE69E9;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+
+/* Hamburger menu animation */
+
+.menu-toggle span:nth-child(2){
+  transform-origin: 0 0;
+}
+
+.menu-toggle span:last-child{
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+  transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu-toggle input:checked ~ span:last-child{
+  transform: rotate(-45deg) translate(-1px,0);
+}
+
+

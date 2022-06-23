@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/lato/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url('../fonts/lato/Lato-Light.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: Press_Start_2P;
+    src: url('../fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: Lato-Light;
+}
+
+
+
+
+.search-input{
+    text-align: left;
+    line-height: 16px;
+    width: 100%;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    border: 2px solid #BE69E9;
+  }
+  
+  .search-btn{
+    margin-left: -63px;
+    background-color: red;
+    color: white;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .search-btnfill{
+    background-color: white; 
+    color: white; 
+    border: 2px solid #BE69E9;
+  }
+  
+  .search-btnfill:hover{
+    background-color: #BE69E9;
+    transition: 0.4s;
+  }
+
+  
+  .search-btnfill:active{
+  
+    transition: 0s;
+    background-color: #584860;
+  }
+  
+  .color-span{
+    stroke: black;
+  }
+  
+  .color-span:hover{
+    stroke: white;
+  }
+
+  .slider{
+    margin-top: 30px;
+  }
+
+  .carouselExampleFade img{
+    width: 100%; 
+    height: 500px;
+    object-fit: cover; 
+    object-position: 100% 50%;
+    transition: 0.3s;
+  }
+  
+  .carousel-control-prev{
+    height: 100%;
+    margin-top: 50px;
+    /* background-color: red; */
+  }
+
+  .carousel-control-next{
+    height: 100%;
+    margin-top: 50px;
+    /* background-color: red; */
+  }
+  
+
+/* Button Orange*/
+.btn-orange{
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #F94309;
+  --bs-btn-border-color: #F94309;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #FF9505;
+  --bs-btn-hover-border-color: #FF9505;
+  --bs-btn-focus-shadow-rgb: 60,153,110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #FF9505;
+  --bs-btn-active-border-color: #FF9505;
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #F94309;
+  --bs-btn-disabled-border-color: #F94309;
+}
+
+
+  /* Scrollbars */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #867A94; 
+  border-radius: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BEB2CC; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #867A94; 
+}
+  
+.contents{
+  margin-top: 120px;
+}
+
+
+.items{
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.items img{
+  width: 250px;
+  margin: 30px;
+  transition: 0.3s;
+}
+  
+.image-card:hover{
+  opacity: 70%;
+  transition: 0.4s;
+}
+
+.hovercard{
+  opacity: 0;
+}
+
+.image-card:hover .hovercard{
+  transition: 0.4s;
+  opacity: 1;
+}
+
+/* Pagination Css */
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #BE69E9; 
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #BE69E9;
+    border-color: #BE69E9;
+}
+
+.pagination{
+  --bs-pagination-hover-color: #BE69E9;
+  --bs-pagination-focus-color: #BE69E9;
+}
